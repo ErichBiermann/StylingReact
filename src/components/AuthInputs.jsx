@@ -26,7 +26,7 @@ export default function AuthInputs() {
   return (
     <div id="auth-inputs" className='w-full max-w-sm mx-auto p-8 rounded shadow-md bg-gradient-to-b from-stone-700 to-stone-800'>
       <div className='flex flex-col gap-2 mb-6'>
-        <p>
+       
           <Input
             label ="Email"
             type="email"
@@ -34,8 +34,7 @@ export default function AuthInputs() {
             invalid = {emailNotValid}
             onChange={(event) => handleInputChange('email', event.target.value)}
           />
-        </p>
-        <p>
+       
         
           <Input
             label = "Password"
@@ -45,7 +44,7 @@ export default function AuthInputs() {
               handleInputChange('password', event.target.value)
             }
           />
-        </p>
+       
       </div>
       <div className="flex justify-end gap-4">
         <button type="button" className="text-amber-400 hover:text-amber-500">
